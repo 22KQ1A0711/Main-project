@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+    <style>
+        /* Add some CSS for styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .flower {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+        form {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        input[type="text"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flower Shop</h1>
+    </header>
+    <div class="container">
+        <div class="flower">
+            <h2>Roses</h2>
+            <p>Beautiful roses available in various colors. Perfect for any occasion.</p>
+            <p>Price: $10 per bouquet</p>
+            <form action="order.php" method="post">
+                <input type="hidden" name="flower_type" value="Roses">
+                <input type="text" name="quantity" placeholder="Quantity">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="Your Email">
+                <input type="submit" value="Order">
+            </form>
+        </div>
+        <div class="flower">
+            <h2>Tulips</h2>
+            <p>Elegant tulips in vibrant hues. Add a pop of color to your space.</p>
+            <p>Price: $8 per bouquet</p>
+            <form action="order.php" method="post">
+                <input type="hidden" name="flower_type" value="Tulips">
+                <input type="text" name="quantity" placeholder="Quantity">
+                <input type="text" name="name" placeholder="Your Name">
+                <input type="text" name="email" placeholder="Your Email">
+                <input type="submit" value="Order">
+            </form>
+        </div>
+        <!-- Add more flower items here -->
+    </div>
+</body>
+</html>
